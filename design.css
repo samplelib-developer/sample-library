@@ -1,0 +1,90 @@
+/* changing overall text font + spacing */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+/* cleaning up header */
+h1 {
+text-decoration: underline;
+}
+
+/* when it is visible, errors will be a thin red box that appears */
+#errors {
+    background-color: red;
+    color: blanchedalmond;
+    margin: 20px;
+    padding: 10px;
+}
+/* if errors contains no text, its background shouldn't show */
+#errors:empty {
+    display: none;
+}
+
+/* make dropzone dashed like in Fig. 6 */
+#drop_zone {
+    border: 2px dashed black;
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+/* making the table actually LOOK like a table */
+#main_lib {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#main_lib th, #main_lib td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#main_lib th {
+    background-color: lightgray;
+}
+
+
+
+/* now, these bars wrap on smaller screens + look like bigger, square boxes that match the original UI plan more*/
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #controls input,
+  #controls select,
+  #controls button {
+    padding: 6px;
+    font-size: 13px;
+  }
+  
+  
+  #bpm_min,
+  #bpm_max {
+    width: 90px;
+  }
+  
+  /* message for when samples dont match */
+  #no_matches {
+    text-align: center;
+    font-style: italic;
+  }
+
+/* ALL CHANGES TO EDIT BOX */
+#edit_form {
+    border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  #edit_form label {
+    width: 100px;
+  }
+  
+  #bpm_error {
+    color: red;
+  }
